@@ -1,0 +1,7 @@
+Node installation:- https://github.com/nodesource/distributions/blob/master/README.md#rpm
+Express example:- https://blog.risingstack.com/your-first-node-js-http-server/
+Reading file in nodejs:- https://www.daveeddy.com/2013/03/26/synchronous-file-io-in-nodejs/
+Body parser nodejs:- https://github.com/expressjs/body-parser
+installing mysql server on centos:- https://support.rackspace.com/how-to/installing-mariadb-server-on-centos/
+mysql example nodejs:- https://www.w3schools.com/nodejs/nodejs_mysql.asp
+mysql library:- https://www.npmjs.com/package/mysql
