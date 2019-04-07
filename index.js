@@ -8,11 +8,14 @@ const port = 80;
 
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 
+// defining static public folder
+app.use(express.static('public'))
+
 function writeToDB(firstname,lastname){
  var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "mohit@mariadb"
+  password: "password"
 });
 
 con.connect(function(err) {
@@ -32,7 +35,7 @@ con.end();
 //writeToDB('a','a');
 
 // this will read form.html file and store it in contents variable
-var contents = fs.readFileSync('form.html').toString();
+var contents = fs.readFileSync('public/form.html').toString();
 //console.log(contents);
 
 // this will serve the get request
@@ -51,7 +54,7 @@ app.post('/',urlencodedParser,(request, response) => {
   var firstname = request.body.firstname;
   var lastname = request.body.lastname;
   console.log(firstname,lastname);
-   writeToDB(firstname,lastname);
+   //writeToDB(firstname,lastname);
   //console.log(response);
 });
 
